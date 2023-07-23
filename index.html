@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a4457b3ffc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p></p>
+                <h1>Hi, I am <span>Palli Sai Nithin</span><br>from Vizianagaram</h1>
+            </div>
+
+        </div>
+    </div>
+    <!-- -------------------about-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile.png" alt="" width="30" height="550">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>To get an opportunity where I can make the best of my potential and contribute to the
+                        organization’s growth.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python,c,JAVA(SE,Swing,JDBC),Mysql</li>
+                            <li><span>Core Subjects</span><br> Data Structures and Algorithms, Computer Networks, Operating Systems, DBMS</li>
+                            <li><span>Web Technologies</span><br>HTML, CSS ,php.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>1.</span> PCAP-Programming Essentials in Python (CISCO)</li>
+                            <li><span>2.</span>An Introduction to programming to C++ (NPTEL) </li>
+                            <li><span>3.</span> Java Programming Fundamentals (Infosys Springboard)</li>
+                            <li><span>4.</span> Introduction to Cybersecurity (CISCO) </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-current</span><br>VRSEC</li>
+                            <li><span>2018-2020</span><br>Fiitjee junior colllege</li>
+                            <li><span>2017-2018</span><br>Sri chaitanya high school</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- --------------------services---------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>Skilled web designer proficient in HTML, CSS, and PHP. Expertise in creating dynamic and visually appealing websites. Showcase your brand with engaging user interfaces and responsive designs. Let's collaborate to bring your ideas to life. Contact me to discuss your project requirements.</p>
+                   <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Skilled UI/UX designer creating visually captivating interfaces and seamless user experiences. Expertise in user research, wireframing, prototyping, and usability testing. Passionate about enhancing user satisfaction through intuitive designs. Explore my portfolio for examples of successful projects. Let's collaborate to elevate your digital presence.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>  
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Experienced mobile app designer skilled in Flutter and Dart. Building visually stunning and user-friendly mobile applications that engage and captivate users. Utilizing the power of Flutter and Dart, I create seamless and interactive experiences. Let's work together to bring your app idea to life. Contact me today.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------portfolio------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="college suggesta.webp">
+                    <div class="layer">
+                        <h3>College Suggesta App</h3>
+                        <p>
+                           Developed a mobile application for engineering joining students in AP. This was developed using dart language and Flutter framework and Django as backend 
+                        </p>
+                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="www.jpg">
+                    <div class="layer">
+                        <h3>Faculty Availability Website</h3>
+                        <p>
+                            Developed a website that is used for finding faculty free time availability for students.This was developed by using HTML , CSS and JavaScript as frontendpart and used PHP as backend.
+                        </p>
+                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+               <!-- <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online shopping app</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, impedit.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+
+    <!-- ---------------------------------contact------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> sainithinpalli22102002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.instagram.com/palli_sai_nithin/"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sai-nithin-palli-256912236/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-rigth">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyrigth">
+            <p>Copyrigth @ palli_sai_nithin <i class="fa-regular fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxdAu0JqLHHIhmOpSChG6KMo7HAG-Gfnobr9HLyPfvmkRcn1w895iKw7K_vNZ7YWZiW_g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
